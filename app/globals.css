@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #0a0f1c;
+  color: #f3efe4;
+}
+
+::selection {
+  background-color: #b8912f;
+  color: #0a0f1c;
+}
+
+/* Visible keyboard focus, styled to fit the palette instead of the browser default */
+:focus-visible {
+  outline: 2px solid #d9b45c;
+  outline-offset: 3px;
+}
+
+/* Hairline rule used across the ledger-style layout */
+.rule {
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, currentColor, transparent);
+  opacity: 0.35;
+}
+
+.rule-solid {
+  height: 1px;
+}
+
+/* Numeral styling for docket / case numbers */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
