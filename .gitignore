@@ -6,3 +6,6 @@
 *.tsbuildinfo
 next-env.d.ts
 logins.txt
+
+.vercel
+.env*
