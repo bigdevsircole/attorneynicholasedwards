@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const sections = [
   {
     heading: "Acceptance of Terms",
-    body: "By accessing and using this website (the "Site"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. If you do not agree to these Terms, please discontinue your use of the Site immediately.",
+    body: "By accessing and using this website (the \"Site\"), you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. If you do not agree to these Terms, please discontinue your use of the Site immediately.",
   },
   {
     heading: "No Attorney-Client Relationship",
